@@ -38,7 +38,7 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 2 - Todos os seus atributos visíveis devem ser declarados como privados(ou protegidos) e acessados apenas por métodos get & set.
 3 - Deve implementar a interface java.io.Serializable.
 
-**Exemplo: **
+**Exemplo:**
 
 	Public class Pessoa implements java.io.Serializable {
 		// construtor publico sem argumentos
