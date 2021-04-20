@@ -1,4 +1,4 @@
-##**Pojo(Plain Old Java Object):** 
+## **Pojo(Plain Old Java Object):** 
 
 É uma classe Java normal que não precisa implementar nenhuma interface ou possuir determinada anotação para que possa ser gerenciada por um framework.
 
@@ -8,7 +8,7 @@ Container deve satisfazer três requisitos:
 - Controlar o ciclo de vida dos seus objetos.
 - prover métodos de obtenção.
 
-##**Lookup:**
+## **Lookup:**
 
 Usamos esta expressão para designar a obtenção de objetos a partir de um container.
 Todo container deve prover alguma interface que nos forneça métodos que possibilitem obter objetos a partir do seu nome ou tipo.
@@ -22,7 +22,7 @@ No código abaixo, quando executamos o método lookup no objeto Context, estamos
 
 
 
-##**Bean:** 
+## **Bean:** 
 
 É um objeto que possui seu ciclo de vida gerenciado pelo container de IoC/DI do Spring.
 
@@ -32,7 +32,7 @@ Uma boa maneira de entender como a inversão de controle se aplica é descrever 
 - O que realmente importa para seus clientes é a interface disponibilizada pelo objeto, que define quais os serviços oferecidos pelo mesmo(é o seu contrato);
 - São facilmente substituíveis por outras implementações que mantenham o mesmo contrato(plugabilidade).
 
-##**JavaBean:**
+## **JavaBean:**
 
 Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. Todo JavaBean deve satisfazer três condições:
 
@@ -42,7 +42,7 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 
 5. Deve implementar a interface java.io.Serializable.
 
-####**Exemplo: **
+#### **Exemplo: **
 
 	Public class Pessoa implements java.io.Serializable {
 		// construtor publico sem argumentos
@@ -58,7 +58,7 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 	}
 
 
-##**Ciclo de Vida:**
+## **Ciclo de Vida:**
 
 O Ciclo de vida diz respeito às etapas de execução de um objeto. As fases pelas quais um objeto de negócio passa durante a execução de um programa são citados abaixo:
 
@@ -71,23 +71,23 @@ O Ciclo de vida diz respeito às etapas de execução de um objeto. As fases pel
 
 8. Uma vez não mais necessário, existindo um método destrutor, este deverá ser invocado e o objeto descartado do container.
 
-##**Resumo de responsabilidade IOC-DI-AOP:**
+## **Resumo de responsabilidade IOC-DI-AOP:**
 	
 - **IOC** - Controla o ciclo de vida de nossas aplicações.
 - **DI** - Define quais classes iremos instanciar e quais lugares iremos injetá-las.
 - **AOP** - Adiciona novos comportamentos as classes de forma transparente elas.
 
-###**IOC/DI** - Inversion of Control/Dependency Injection
+### **IOC/DI** - Inversion of Control/Dependency Injection
 
 Na inversão de controle, não é a classe cliente a responsável por definir quais serão suas dependências.
 Esta responsabilidade é delegada a um container de injeção de dependências.
 
-###**AOP - Aspect Oriented Programming**
+### **AOP - Aspect Oriented Programming**
 
 Comportamentos que aparecem por toda a aplicação que não estão necessariamente relacionados à lógica de negócio
 que estamos implementando. Esse tipo de comportamento costuma gerar uma infinidade de código repetitivo espalhado por todo sistema. Chama-se este comportamento secundário de Aspecto.
 
-####**Exemplo de aspecto:**
+#### **Exemplo de aspecto:**
 
 	public class ClasseMuitoImportante{
 		private ControleAcesso controleAcesso;
