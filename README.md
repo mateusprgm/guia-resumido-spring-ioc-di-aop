@@ -42,7 +42,7 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 
 5. Deve implementar a interface java.io.Serializable.
 
-#### **Exemplo: **
+#### **Exemplo:**
 
 	Public class Pessoa implements java.io.Serializable {
 		// construtor publico sem argumentos
