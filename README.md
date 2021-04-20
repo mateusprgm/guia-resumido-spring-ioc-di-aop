@@ -54,7 +54,7 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 	}
 
 
-**Ciclo de Vida: **
+**Ciclo de Vida:**
 
 O Ciclo de vida diz respeito às etapas de execução de um objeto. As fases pelas quais um objeto de negócio passa durante a execução de um programa são citados abaixo:
 
@@ -66,9 +66,9 @@ O Ciclo de vida diz respeito às etapas de execução de um objeto. As fases pel
 
 **Resumo de responsabilidade a grosso modo:**
 	
-**IOC** - Controla o ciclo de vida de nossas aplicações.
-**DI** - Define quais classes iremos instanciar e quais lugares iremos injetá-las.
-**AOP** - Adiciona novos comportamentos as classes de forma transparente elas.
+- **IOC** - Controla o ciclo de vida de nossas aplicações.
+- **DI** - Define quais classes iremos instanciar e quais lugares iremos injetá-las.
+- **AOP** - Adiciona novos comportamentos as classes de forma transparente elas.
 
 **IOC/DI** - Inversion of Control/Dependency Injection
 
