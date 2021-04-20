@@ -34,11 +34,13 @@ Uma boa maneira de entender como a inversão de controle se aplica é descrever 
 
 Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. Todo JavaBean deve satisfazer três condições:
 
-1 - Deve possuir um construtor público que não receba parâmetros.
-2 - Todos os seus atributos visíveis devem ser declarados como privados(ou protegidos) e acessados apenas por métodos get & set.
-3 - Deve implementar a interface java.io.Serializable.
+1. Deve possuir um construtor público que não receba parâmetros.
 
-**Exemplo:**
+3. Todos os seus atributos visíveis devem ser declarados como privados(ou protegidos) e acessados apenas por métodos get & set.
+
+5. Deve implementar a interface java.io.Serializable.
+
+**Exemplo: **
 
 	Public class Pessoa implements java.io.Serializable {
 		// construtor publico sem argumentos
@@ -58,11 +60,14 @@ Foi um padrão adotado pela Sun para a escrita de componentes reutilizáveis. To
 
 O Ciclo de vida diz respeito às etapas de execução de um objeto. As fases pelas quais um objeto de negócio passa durante a execução de um programa são citados abaixo:
 
-1 - O Objeto é instanciado.
-2 - Se houverem dependências a serem injetadas no objeto, estas devem ser injetadas;
-3 - Se após as dependências tiverem sido injetadas for necessário executar um método de inicialização, este deverá ser invocado;
-4 - O objeto já inicializado e com todas as suas dependências injetadas é enviado ao cliente que dele necessita;
-5 - Uma vez não mais necessário, existindo um método destrutor, este deverá ser invocado e o objeto descartado do container.
+1. O Objeto é instanciado.
+2. Se houverem dependências a serem injetadas no objeto, estas devem ser injetadas;
+
+4. Se após as dependências tiverem sido injetadas for necessário executar um método de inicialização, este deverá ser invocado;
+
+6. O objeto já inicializado e com todas as suas dependências injetadas é enviado ao cliente que dele necessita;
+
+8. Uma vez não mais necessário, existindo um método destrutor, este deverá ser invocado e o objeto descartado do container.
 
 **Resumo de responsabilidade a grosso modo:**
 	
